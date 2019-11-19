@@ -1,0 +1,6 @@
+All we need to do for this one is to ssh to the pico shell server:
+
+ssh jakem77@2018shell4.picoctf.com
+
+flag is: picoCTF{who_n33ds_p4ssw0rds_38dj21
+}

@@ -1,0 +1,13 @@
+For this challenge we need to use a hex editor to see the content of a binary file.
+On Mac or Linux we can just do it in Vim (still a beginner but loving it already, so powerful).
+Open the file in Vim, go to hex edit mode by :%!xxd
+flag is at the bottom of the file (type G)
+
+OR
+
+ignore all of the above and just use strings function:
+
+strings hex_editor.jpg
+
+flag:picoCTF{and_thats_how_u_edit_hex_kittos_dF817ec5}  
+

@@ -1,0 +1,12 @@
+the good old caesar cipher from first year of uni :)
+now we have the encrypted flag, just gotta decrypt it, instead of just using a tool
+online, we can use 'caesar' tool from the command line:
+
+cat ciphertext| cut -d "{" -f2 | cut -d "}" -f1 | caesar 1
+
+we coulda do this manually from 1 to 26, but lets use a for loop instead
+
+for i in {1..26}; do cat ciphertext| cut -d "{" -f2 | cut -d "}" -f1 | caesar $i; done
+
+flag is: picoCTF{justagoodoldcaesarcipherfwacbovv}
+

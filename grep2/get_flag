@@ -1,0 +1,7 @@
+#okay so what we gotta do, is to login to the picoCTF2018 server,
+cd to the challenge directory, flags are hidden in 10 folders,
+files0 to files9.
+
+grep -r 'picoCTF.*' files*
+
+flag found: picoCTF{grep_r_and_you_will_find_556620f7}

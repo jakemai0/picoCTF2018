@@ -1,0 +1,13 @@
+SQL Injection!!!!!!
+I'd be taking SQL course in Trimester 1 next month, gonna be exciting.
+
+So we are given a login page, however we dont know the username password combo,
+how do we gain access?
+
+Try username as: admin
+Try password as: ' OR '1'='1
+
+Using incorrectly filtered escape characters.
+Voila we have the flag:
+
+picoCTF{con4n_r3411y_1snt_1r1sh_8cf1b7e7}

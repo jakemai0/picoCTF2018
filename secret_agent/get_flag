@@ -1,0 +1,47 @@
+Given a website that hasnt fully been finished. BUT the hints are:
+-Google gets all your info anyway
+-How can your browser pretend to be something else?
+
+When we click on the button 'Flag' from the website, it said: 'You're not google! Mozilla/5.0 (X11;
+Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+
+From the hints above, I think we need to make the chrome browser to pretend to be the web crawler from
+google, in order to get the info from the website.
+
+How do we do that?
+Lets google 'google user agent'
+
+the first link shows us all the crawler used by google: Crawler; User agent tokens; Full user agent
+string (as seen in website log files) (the full user agent string looks quite alike the text we received
+from the webpage when we clicked on the Flag button).
+
+Given a website that hasnt fully been finished. BUT the hints are:
+-Google gets all your info anyway
+-How can your browser pretend to be something else?
+
+From the hints above, I think we need to make the chrome browser to pretend to be the web crawler from
+google, in order to get the info from the website.
+
+How do we do that?
+Lets google 'google user agent'
+
+the first link shows us all the crawler used by google: Crawler; User agent tokens; Full user agen
+string (as seen in website log files)
+
+Lets try with this agent Googglebot(Desktop): Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36
+
+Use 'curl --user-agent' to set the user agent:
+
+curl --user-agent "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googleb    ot/2.1;
++http://www.google.com/bot.html) Safari/537.36" http://2018shell.picoctf.com:11421/flag
+
+It will return the html file of the website including the flag, we just need to grep it out.
+
+Basically an user agent is a software that is acting on behalf of the user, sending the webserver
+information about the user Web Browser and OS (Chrome, Firefox, Safari, IE; Linux Ubuntu, Mac OS X,
+Windows 10)
+
+
+
+Flag is: 
+picoCTF{s3cr3t_ag3nt_m4n_ed3fe08d}

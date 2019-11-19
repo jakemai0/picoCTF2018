@@ -1,0 +1,15 @@
+the famous bufferoverflow.
+I will start learning about C next trimester, but I've been doing a bit of reading in my spare time,
+let's do this.
+
+We were given a binary "vuln" file and a source "vuln.c" file.
+after inspecting the vuln.c file,
+we know that we need to overflow 16 characters in the buffer.
+Do this on pico server.1
+
+Once we're in pico server, try to run vuln with 'hello' as argument, we would get 'Thanks! Received: hello'
+Now let's try to give vuln this argument: imjustgonnatrytofeedyouacraptonofinputletsseeifyouwillbreak
+
+It breaks and spits out the flag: 
+
+picoCTF{ov3rfl0ws_ar3nt_that_bad_a54b012c}

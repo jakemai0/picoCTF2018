@@ -1,0 +1,21 @@
+this one was pretty difficult for me to be honest.
+So we needed a disassembler to break down the executable program. 
+
+So once we see how the program is executed, it will call the getkey() function, thus triggered the alarm to say
+that 'you need a faster machine, bye' and close the program. We dont want that.
+
+We want it to run getkey(), and then printflag(), so we use the GNU Debugger: gdb
+
+open the file using gdb,
+
+then type 'break main' (idk maybe to create a break point, we want to run the program one fuction at a
+time)
+
+now we: call (char *) get_key(): it will then calculate the key
+then:   call (char *) print_flag(): to print out the flag, and voila
+
+flag is:
+picoCTF{why_bother_doing_unnecessary_computation_29ff5e84}
+
+
+Reverse Engineering requires such deep computing and programming knowledge, dang!

@@ -1,0 +1,5 @@
+Since there are only 10 tickets in this json file,
+I solved this by hand, gonna do some research and try to write a Python script
+to do this. Anyway flag is:
+
+picoCTF{J4y_s0n_d3rUUUULo_23fa6fa6}

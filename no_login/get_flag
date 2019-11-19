@@ -1,0 +1,13 @@
+We were given a site, there is no login but we need admin privilige to
+be able to click and retrieve the flag. Hint is 'what is it actually
+looking for in the cookie?' The admin cookie?
+
+lets try to add the cookie in.
+Using 'edit this cookie' extension on chrome, add cookie.
+Name set as: admin
+Value set as idk maybe: root
+
+and voila we're in.
+
+flag is picoCTF{n0l0g0n_n0_pr0bl3m_ed714e0e}
+

@@ -1,0 +1,6 @@
+this is a vigenere encryption, based on the vigenere table, with the
+encrypted text as llkjmlmpadkkc and the key as thisisalilkey,
+using the vigenere table we have the key as: secretmessage
+
+picoCTF{secretmessage}
+

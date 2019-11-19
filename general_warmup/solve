@@ -1,0 +1,5 @@
+So we needed to convert 0x41 in hexadecimal into ascii, we could simply use a converter,
+but a cool way of doing it would be:
+
+create a python script to get the flag, in style.
+

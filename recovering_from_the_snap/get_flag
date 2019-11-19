@@ -1,0 +1,13 @@
+this is a forensics challenge, so an useful tool to have is 'foremost'
+used to recover files from disk image. All we need to do is to run:
+
+foremost animals.dd
+
+There would be a new created folder called output, inside are the audit txt file
+produced by foremost and another jpg folder, which contains all the jpgs files of
+the animals, plus the flag that we need to find.
+
+flag is: 
+picoCTF{th3_5n4p_happ3n3d}
+
+

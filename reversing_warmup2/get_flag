@@ -1,0 +1,6 @@
+so instead of using an online tool to convert a base64 string to ascii,
+we can do this in the command line:
+echo "dGg0dF93NHNfczFtcEwz" | base64 -d
+th4t_w4s_s1mpL3
+
+voila, there's the flag.

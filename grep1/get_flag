@@ -1,0 +1,6 @@
+I was an ididot for this one,
+grep syntax should be like grep 'pattern', but instead I tried grep pattern 
+without the '', I was pulling my hair out for like 10 mins straight screaming why
+it didnt' work.
+
+cat file | grep 'picoCTF.*' 

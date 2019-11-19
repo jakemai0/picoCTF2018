@@ -1,0 +1,13 @@
+so for this one we just gotta inspect the page and find pieces of the flag
+in the site's html, css and js files.
+
+html:
+picoCTF{ur_4_real_1nspe :first piece
+
+css:
+ct0r_g4dget_098df0d0 :second piece
+
+js:
+  : third piece (nothing)
+
+

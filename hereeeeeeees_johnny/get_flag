@@ -1,0 +1,21 @@
+okay so this one is pretty tricky.
+The Hereeeeeeeee's Johnny reference is about John the Ripper brute forcing software.
+We were told to netcat to this server, however it requires an username, password combo that
+we do not know about, 2 files were given: passwd and shadow.
+
+Git cloned John the ripper from github, installed it,
+./unshadow passwd shadow
+
+the hashed password turned out to be 'hellokitty' and the username is root
+
+netcat to the server with the port given:
+nc 2018shell.picoctf.com 42165
+
+username: root
+password: hellokitty
+
+and we got the flag: picoCTF{J0hn_1$_R1pp3d_5f9a67aa}
+
+OR
+
+we can make a script...

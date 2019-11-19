@@ -1,0 +1,56 @@
+.intel_syntax noprefix
+.bits 32
+	
+.global asm0
+
+asm0:
+	push	ebp
+	mov	ebp,esp
+	mov	eax,DWORD PTR [ebp+0x8]
+	mov	ebx,DWORD PTR [ebp+0xc]
+	mov	eax,ebx
+	mov	esp,ebp
+	pop	ebp	
+	ret
+
+
+okay so we have the Source file here as above.
+
+question is what does asm0(0xb6, 0xc6) return? Output should be a hexadecimal value.
+
+Mann to be honest I've never touched on assembly language before, but let's try to
+crack this with some help.
+
+we know what we need to run asm0 function with 2 given arguments, 0xb6 and 0xc6.
+here is the asm0 function:
+
+asm0:
+          push    ebp
+          mov     ebp,esp
+          mov     eax,DWORD PTR [ebp+0x8]
+          mov     ebx,DWORD PTR [ebp+0xc]
+          mov     eax,ebx
+          mov     esp,ebp
+          pop     ebp
+          ret
+
+push ebp
+move ebp, esp
+these two lines are function prologue, not that important to inspect
+
+next two lines, we have:
+mov     eax,DWORD PTR [ebp+0x8]
+mov     ebx,DWORD PTR [ebp+0xc]
+
+I kinda guess that eax = 0x8 and ebx = 0xc,
+from asm0(0xb6, 0xc6) => eax = 0xb6, ebx = 0xc6
+
+next line we have:
+mov     eax,ebx => eax = ebx = 0xc6
+
+next 2 lines are function epilogue
+then we return the value.
+
+flag: 0xc6
+
+system engineer and forensics engineers are truly genious, how can I be like that?

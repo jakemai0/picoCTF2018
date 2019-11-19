@@ -1,0 +1,6 @@
+all right so we need to find the flag thats hidden in an environment var on
+the pico shell server.
+
+this didn't take me too long, I know its just somewhere around /etc/profile
+
+flag: picoCTF{eNv1r0nM3nT_v4r14Bl3_fL4g_3758492}

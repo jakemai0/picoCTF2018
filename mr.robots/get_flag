@@ -1,0 +1,20 @@
+It turned out that the challenge name has nothing to do with the TV series Mr.Robots starring Rami Malek, it actually refers to Web Robots (aka Web Scrawler, Spiders, Crawlers). They are softwares that
+traverse the Web, for the purpose of Web indexing/Web categorising (for search engines for example).
+
+Crawlers consume resources on visited systems and often visit sites without approval. Sites
+including a robots.txt file to request bots to index only parts of website, or nothing at all
+(disallowing certain parts of the website).
+
+So to crack this challenge, add '/robots.txt' at the end of the url.
+It will show:
+
+User-agent: *
+Disallow: /30del.html
+
+We know that the website does not want the crawler to see the /30del.html part.
+
+Let's try to look at that.
+
+And voila, there's the flag:
+
+picoCTF{th3_w0rld_1s_4_danger0us_pl4c3_3lli0t_30de1}

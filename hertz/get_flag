@@ -1,0 +1,11 @@
+Cryptography challenge,
+We gotta decode this substitution cipher, ciphertext is a huge 
+paragraph. 
+
+So I went online to look for some substitution cipher decoder, and
+quipqiup.com seems to give the best answer. 
+
+flag: substitution_ciphers_are_solvable_fcpocdgwte
+wrap this in proper flag format we have:
+picoCTF{substitution_ciphers_are_solvable_fcpocdgwte}
+

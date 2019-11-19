@@ -1,0 +1,5 @@
+by using 'editthiscookie' extension in chrome,
+we were able to see the admin cookie value: happened to be set as False,
+changed it to True and refresh the site. Flag found
+
+flag: picoCTF{l0g1ns_ar3nt_r34l_a280e12c}
